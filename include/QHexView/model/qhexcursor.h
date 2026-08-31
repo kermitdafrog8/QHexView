@@ -33,6 +33,7 @@ public:
     bool hasSelection() const;
     bool isSelected(qint64 line, qint64 column) const;
     void setMode(Mode m);
+    void moveAddress(quint64 address);
     void move(qint64 offset);
     void move(qint64 line, qint64 column);
     void move(QHexPosition pos);

@@ -110,6 +110,13 @@ void QHexCursor::switchMode() {
     }
 }
 
+void QHexCursor::moveAddress(quint64 address) {
+    if(address < m_options->base_address)
+        address = m_options->base_address;
+
+    this->move(static_cast<qint64>(address - m_options->base_address));
+}
+
 void QHexCursor::move(qint64 offset) {
     this->move(this->offsetToPosition(offset));
 }
