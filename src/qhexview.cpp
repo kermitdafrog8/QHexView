@@ -1039,6 +1039,10 @@ unsigned int QHexView::addressWidth() const {
 
 unsigned int QHexView::lineLength() const { return m_options.line_length; }
 
+bool QHexView::hasSelection() const {
+    return m_hexcursor && m_hexcursor->hasSelection();
+}
+
 bool QHexView::isModified() const {
     return m_hexdocument && m_hexdocument->isModified();
 }

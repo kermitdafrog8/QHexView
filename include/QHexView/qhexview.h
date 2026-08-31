@@ -66,6 +66,7 @@ public:
     uchar getByte(qint64 offset) const;
     unsigned int addressWidth() const;
     unsigned int lineLength() const;
+    bool hasSelection() const;
     bool isModified() const;
     bool canUndo() const;
     bool canRedo() const;
