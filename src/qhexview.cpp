@@ -1047,6 +1047,8 @@ bool QHexView::isModified() const {
     return m_hexdocument && m_hexdocument->isModified();
 }
 
+bool QHexView::isReadOnly() const { return m_readonly; }
+
 bool QHexView::canUndo() const {
     return m_hexdocument && m_hexdocument->canUndo();
 }

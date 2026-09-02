@@ -68,6 +68,7 @@ public:
     unsigned int lineLength() const;
     bool hasSelection() const;
     bool isModified() const;
+    bool isReadOnly() const;
     bool canUndo() const;
     bool canRedo() const;
     bool trackChanges() const;
