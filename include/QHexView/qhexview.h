@@ -59,6 +59,8 @@ public:
     QHexCursor* hexCursor() const;
     const QHexMetadata* hexMetadata() const;
     QHexOptions options() const;
+    QHexCharFormat addressFormat() const;
+    QHexCharFormat headerFormat() const;
     QColor getReadableColor(QColor c) const;
     QByteArray selectedBytes() const;
     QByteArray visibleBytes() const;

@@ -206,6 +206,14 @@ QHexCursor* QHexView::hexCursor() const {
 const QHexMetadata* QHexView::hexMetadata() const { return m_hexmetadata; }
 QHexOptions QHexView::options() const { return m_options; }
 
+QHexCharFormat QHexView::addressFormat() const {
+    return m_options.address_format;
+}
+
+QHexCharFormat QHexView::headerFormat() const {
+    return m_options.header_format;
+}
+
 void QHexView::setOptions(const QHexOptions& options) {
     auto oldlinelength = m_options.line_length;
     m_options = options;
