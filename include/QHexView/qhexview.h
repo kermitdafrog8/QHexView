@@ -142,6 +142,8 @@ public Q_SLOTS:
     void setLineLength(unsigned int l);
     void setGroupLength(unsigned int l);
     void setScrollSteps(int scrollsteps);
+    void setAddressFormat(const QHexCharFormat& cf);
+    void setHeaderFormat(const QHexCharFormat& cf);
     void setReadOnly(bool r);
     void setAutoWidth(bool r);
 

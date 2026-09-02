@@ -568,6 +568,16 @@ void QHexView::setScrollSteps(int scrollsteps) {
     m_options.scroll_steps = scrollsteps;
 }
 
+void QHexView::setAddressFormat(const QHexCharFormat& cf) {
+    m_options.address_format = cf;
+    this->checkAndUpdate();
+}
+
+void QHexView::setHeaderFormat(const QHexCharFormat& cf) {
+    m_options.header_format = cf;
+    this->checkAndUpdate();
+}
+
 void QHexView::setReadOnly(bool r) { m_readonly = r; }
 
 void QHexView::setAutoWidth(bool r) {
